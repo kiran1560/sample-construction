@@ -374,6 +374,10 @@ body {
     }
 }
 
+
+
+
+
 #home-about {
     padding: 100px 80px;
     background-color: #fff;
@@ -426,6 +430,9 @@ body {
   pointer-events: none;
   transition: transform 0.1s linear;
 }
+
+
+
 
 
 .image-secondary .small-img {
