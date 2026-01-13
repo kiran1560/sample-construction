@@ -250,6 +250,10 @@ body {
 }
 
 
+
+
+
+
 #hero-banner {
     width: 100%;
     overflow-x: hidden;
@@ -432,9 +436,6 @@ body {
 }
 
 
-
-
-
 .image-secondary .small-img {
   height: 240px;
   margin-bottom: 20px;
@@ -514,6 +515,10 @@ body {
     object-fit: cover;
   }
 }
+
+
+
+
 .section-text-heading {
   padding: 60px 20px;
   background-color: #ffffff;
@@ -553,6 +558,8 @@ body {
 .section-text-heading .btn-read-more:hover {
   background-color: #000000;
 }
+
+
 
 @media (max-width: 768px) {
   .section-text-heading .row {

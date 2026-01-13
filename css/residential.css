@@ -1,13 +1,13 @@
 .right-slider2 {
-    width: 35%;          /* LESS width */
+    width: 35%;        
     height: 100%;
     position: relative;
     margin-left: 100px;
 }
 
 .slider2 {
-    width: 100%;         /* no overflow width */
-    height: 650px;       /* MORE height */
+    width: 100%;         
+    height: 650px;      
     position: absolute;
     left: 0;
     top: 120px;
@@ -42,7 +42,7 @@
     .slider2 {
         position: relative;
         width: 100%;
-        height: 420px;   /* taller than before */
+        height: 420px;  
         top: 0;
         border-radius: 30px;
     }
@@ -210,7 +210,7 @@
 .split-left img {
   width: 180px;
   height: 180px;
-  object-fit: contain; /* keeps 40x40 even if image is larger */
+  object-fit: contain; 
 }
 
 /* RIGHT COLUMN */
@@ -258,7 +258,7 @@
   line-height: 1.6;
 }
 
-/* BUTTON */
+
 .info-btn {
   text-align: right;
 }
@@ -297,7 +297,7 @@
   }
 }
 
-/* SMART SIMPLE (no change needed) */
+
 .smart-simple {
   padding: 100px 20px;
   text-align: center;
@@ -328,20 +328,18 @@
 }
 
 
-/* THREE COLUMN SECTION */
 .three-col-section {
   padding: 80px 6%;
    margin-top: -150px;
 }
 
-/* GRID – FIXED */
 .three-col-row {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* ✅ full width */
-  gap: 0;                                /* ✅ connected */
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;                               
 }
 
-/* COMMON COLUMN HEIGHT */
+
 .col {
   min-height: 520px;
   display: flex;
@@ -349,7 +347,7 @@
   justify-content: center;
 }
 
-/* COLUMN 1 */
+
 .col-text {
   background: #000;
   color: #fff;
@@ -381,10 +379,10 @@
   background: #ffb347;
 }
 
-/* COLUMN 2 – IMAGE */
+
 .col-image {
   overflow: hidden;
-  display: flex;            /* ✅ ensure full height */
+  display: flex;           
 }
 
 .col-image img {
@@ -398,7 +396,7 @@
   transform: scale(1.1);
 }
 
-/* COLUMN 3 – SLIDER */
+
 .col-slider {
   background: #f5f5f5;
   padding: 40px 20px;
