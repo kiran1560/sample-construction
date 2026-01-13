@@ -182,7 +182,7 @@
 
 .services-eve-grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 25px;
 }
 
@@ -190,13 +190,27 @@
   text-align: center;
   font-family: "Times New Roman", Times, serif;
   color: #000;
+   cursor: pointer;
+
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+
+.eve-card:hover {
+  transform: scale(1.06);
 }
 
 .eve-card img {
-  width: 100%;
+  width: 90%;
   height: 160px;
   object-fit: cover;
   border-radius: 4px;
+   transition: transform 0.4s ease;
+}
+
+
+.eve-card:hover img {
+  transform: scale(1.1);
 }
 
 .eve-card p {
@@ -305,7 +319,7 @@
 }
 
 .bg-roof{
-   background-image: url("https://apekinc.com/wp-content/uploads/2024/09/Eclipse-Aerial-1-scaled.jpg");
+   background-image: url("../5.jpeg");
 }
 
 /* Add more as needed */

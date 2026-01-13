@@ -1,7 +1,7 @@
 .section-about-hero {
   position: relative;
   height: 500px;
-  background: url('https://apekinc.com/wp-content/uploads/2024/09/Eclipse-Aerial-scaled.jpg') center center/cover no-repeat;
+  background: url('../2.jpeg') center center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -78,10 +78,17 @@ h2 {
 
 .services-cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 25px;
+  grid-template-columns: repeat(2, 1fr); /* 5 cards in one row */
+  gap: 20px;
   margin-bottom: 50px;
 }
+
+.service-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
 
 .service-card {
   background: white;
@@ -100,14 +107,14 @@ h2 {
 
 .service-icon {
   font-size: 60px;
-  color: #ff6600;
+  color: #e98e52;
   margin-bottom: 15px;
   user-select: none;
 }
 
 .service-card h3 {
   margin-bottom: 10px;
-  color: #ff6600;
+  color: #e98e52;
   font-weight: 600;
 }
 
@@ -118,7 +125,7 @@ h2 {
 
 .unique-value {
   background: #fff;
-  border: 2px solid #ff6600;
+  border: 2px solid #e98e52;
   border-radius: 12px;
   max-width: 900px;
   margin: 0 auto 40px;
@@ -149,6 +156,12 @@ h2 {
   background-color: #cc5200;
 }
 
+@media (max-width: 1024px) {
+  .services-cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .mission-title {
@@ -163,8 +176,16 @@ h2 {
     max-width: 300px;
     padding: 12px 20px;
   }
+  .services-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
+@media (max-width: 480px) {
+  .services-cards {
+    grid-template-columns: 1fr;
+  }
+}
 
 /* Contact us */
 
@@ -172,7 +193,7 @@ h2 {
     position: relative;
     width: 100%;
     height: 500px;
-    background: url('https://cdn.apartmenttherapy.info/image/upload/v1663633471/black_house_1.jpg') center center/cover no-repeat;
+    background: url('../7.jpeg') center center/cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -327,3 +348,4 @@ h2 {
     flex: 1 1 auto;
   }
 }
+
