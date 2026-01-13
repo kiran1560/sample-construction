@@ -100,6 +100,23 @@ body {
   .navbar-toggler-icon {
     filter: invert(1);
   }
+  
+
+  /* Now */
+
+  .nav-dropdown .dropdown-list {
+  position: static;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  display: none;
+  margin-top: 10px;
+}
+
+.nav-dropdown.open .dropdown-list {
+  display: block;
+}
+
 }
 
 
@@ -250,6 +267,70 @@ body {
 }
 
 
+/* ===== SERVICES DROPDOWN ===== */
+
+.nav-dropdown {
+  position: relative;
+}
+
+/* Dropdown container */
+.dropdown-list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+
+  background: #000;
+  min-width: 220px;
+
+  padding: 10px 0;
+  margin-top: 10px;
+
+  list-style: none;
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+
+  transition: all 0.25s ease;
+  z-index: 1000;
+}
+
+/* Show on hover */
+.nav-dropdown:hover .dropdown-list {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+/* Dropdown items */
+.dropdown-list li {
+  padding: 0;
+}
+
+/* Dropdown links */
+.dropdown-list a {
+  display: block;
+  padding: 10px 20px;
+
+  color: #fff;
+  text-decoration: none; /* NO underline */
+  font-size: 14px;
+  font-weight: 500;
+
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effect */
+.dropdown-list a:hover {
+  background: #111;
+  color: orange;
+}
+
+/* Remove blue outline */
+.dropdown-list a:focus {
+  outline: none;
+}
+
 
 
 
@@ -289,7 +370,7 @@ body {
     width: 100%;
     height: 85%;
     background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), 
-                url('../images/banner.jpg') center/cover no-repeat;
+                url('../2.jpeg') center/cover no-repeat;
     padding: 0 100px 0 80px;
     display: flex;
     flex-direction: column;
@@ -1244,4 +1325,7 @@ body {
   border: none;
   display: block;
 }
+
+
+
 

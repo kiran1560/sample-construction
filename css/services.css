@@ -1,0 +1,311 @@
+.section-hero-service {
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  min-height: 300px;
+
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    url("https://static.vecteezy.com/system/resources/thumbnails/027/104/257/small/surveying-and-inspecting-by-a-civil-engineer-examining-the-construction-site-free-photo.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* Dark overlay */
+.section-hero-service::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.55); 
+}
+
+/* Heading */
+.section-hero-service h1 {
+  position: relative;
+  z-index: 1;
+
+  font-family: "Times New Roman", Times, serif;
+  font-size: clamp(2rem, 5vw, 4rem);
+  font-weight: 600;
+
+  color: #ffffff;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+
+/* ===== SERVICES CARD SECTION ===== */
+
+.services-card {
+  padding: 80px 8%;
+  background: #ffffff;
+}
+
+/* Grid: 3 top, 2 bottom automatically */
+.services-card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+/* Card */
+.service-card {
+  text-decoration: none;
+  color: #000;
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+}
+
+/* Image wrapper */
+.card-image {
+  width: 100%;
+  height: 240px;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+/* Image */
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* fits any image size */
+  transition: transform 0.4s ease;
+}
+
+/* Hover zoom */
+.service-card:hover img {
+  transform: scale(1.1);
+}
+
+/* Title */
+.service-card h3 {
+  margin-top: 15px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 991px) {
+  .services-card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 575px) {
+  .services-card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card-image {
+    height: 200px;
+  }
+}
+
+
+/* ===== EAVESTROUGH HEADER SECTION ===== */
+
+.section-bg-overlay {
+  position: relative; /* needed for overlay positioning */
+  width: 100%;
+  height: 500px;
+  overflow: hidden; /* prevent overlay bleeding outside */
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Overlay - blackish layer only over the image inside section */
+.section-bg-overlay::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  pointer-events: none; /* allow clicks through overlay */
+  z-index: 0;
+}
+
+/* Text above overlay */
+.section-bg-overlay h1 {
+  position: relative;
+  z-index: 1;
+
+  font-family: "Times New Roman", Times, serif;
+  font-size: clamp(36px, 6vw, 64px);
+  font-weight: 700;
+
+  color: #ffffff;
+  text-align: center;
+
+  letter-spacing: 0.5px;
+  text-transform: capitalize;
+
+  margin: 0;
+}
+
+
+
+.eav-title {
+  font-family: "Times New Roman", Times, serif;
+  font-size: clamp(38px, 6vw, 64px);
+  font-weight: 700;
+
+  color: #ffffff; /* gold was reducing contrast */
+  text-align: center;
+
+  letter-spacing: 0.5px;
+  text-transform: capitalize;
+
+  margin: 0;
+}
+
+
+
+/* ===== EAVESTROUGH FEATURES SECTION ===== */
+
+.services-eve {
+  padding: 60px 6%;
+  background: #ffffff;
+}
+
+.services-eve-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 25px;
+}
+
+.eve-card {
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  color: #000;
+}
+
+.eve-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.eve-card p {
+  margin-top: 12px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 991px) {
+  .services-eve-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 575px) {
+  .services-eve-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .eve-card img {
+    height: 180px;
+  }
+}
+
+
+/* ===== EAVESTROUGH INFO SECTION ===== */
+
+.eavestrough-info {
+  padding: 80px 8%;
+  background: #ffffff;
+}
+
+.eave-container {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+/* Image side */
+.eave-image {
+  flex: 1;
+  overflow: hidden;
+  border-radius: 6px;
+}
+
+.eave-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+/* Hover effect */
+.eave-image:hover img {
+  transform: scale(1.08);
+}
+
+/* Text side */
+.eave-text {
+  flex: 1;
+  font-family: "Times New Roman", Times, serif;
+  color: #000;
+}
+
+.eave-text h2 {
+  font-size: 32px;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.eave-text p {
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 991px) {
+  .eave-container {
+    flex-direction: column;
+  }
+
+  .eave-text h2 {
+    font-size: 26px;
+  }
+}
+
+
+.bg-eav {
+  background-image: url("https://aamasonry.ca/wp-content/uploads/2025/02/gutter-design.webp");
+}
+
+.bg-fascia {
+  background-image: url("https://belcofp.com/wp-content/uploads/2023/10/Full-House-Trim-Package-Featured-Image-Fascia.png");
+}
+
+.bg-soffit {
+  background-image: url("https://mtcopeland.com/wp-content/uploads/2021/09/julian-gentilezza-ctUWE7BUEzE-unsplash-1-scaled-e1631030167414.jpg");
+}
+
+.bg-vin{
+   background-image: url("https://images.ctfassets.net/79nimht05j33/1a60zeku7N5QNaKz7U9gGf/4f266e50fae726e4122746973fdaf44b/types-of-vinyl-siding.jpeg?w=1500&h=1000&fl=progressive&q=70&fm=jpg&bg=transparent");
+}
+
+.bg-roof{
+   background-image: url("https://apekinc.com/wp-content/uploads/2024/09/Eclipse-Aerial-1-scaled.jpg");
+}
+
+/* Add more as needed */
