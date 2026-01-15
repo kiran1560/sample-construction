@@ -1,7 +1,7 @@
 .section-about-hero {
   position: relative;
   height: 500px;
-  background: url('../2.jpeg') center center/cover no-repeat;
+  background: url('../images/eave3.jpg') center center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -193,7 +193,7 @@ h2 {
     position: relative;
     width: 100%;
     height: 500px;
-    background: url('../7.jpeg') center center/cover no-repeat;
+    background: url('../images/fas5.jpg') center center/cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;

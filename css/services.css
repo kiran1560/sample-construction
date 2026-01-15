@@ -307,19 +307,19 @@
 }
 
 .bg-fascia {
-  background-image: url("https://belcofp.com/wp-content/uploads/2023/10/Full-House-Trim-Package-Featured-Image-Fascia.png");
+  background-image: url("../images/fas.jpg");
 }
 
 .bg-soffit {
-  background-image: url("https://mtcopeland.com/wp-content/uploads/2021/09/julian-gentilezza-ctUWE7BUEzE-unsplash-1-scaled-e1631030167414.jpg");
+  background-image: url("../images/sof.jpg");
 }
 
 .bg-vin{
-   background-image: url("https://images.ctfassets.net/79nimht05j33/1a60zeku7N5QNaKz7U9gGf/4f266e50fae726e4122746973fdaf44b/types-of-vinyl-siding.jpeg?w=1500&h=1000&fl=progressive&q=70&fm=jpg&bg=transparent");
+   background-image: url("../images/vin5.jpg");
 }
 
 .bg-roof{
-   background-image: url("../5.jpeg");
+   background-image: url("../images/roof2.jpg");
 }
 
 /* Add more as needed */
