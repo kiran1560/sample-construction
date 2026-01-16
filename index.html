@@ -74,7 +74,7 @@
 
 <main>
    
-<section id="hero-banner">
+<!-- <section id="hero-banner">
   <div class="main-banner">
     <div class="overlay-content">
       
@@ -101,8 +101,32 @@
       
     </div>
   </div>
-</section>
+</section> -->
 
+<section id="hero-banner">
+  <div class="main-banner">
+
+    <!-- Background Slider -->
+    <div class="bg-slider">
+      <img src="./images/eave2.jpg" class="slide active">
+      <img src="./1.jpeg" class="slide">
+    </div>
+
+    <!-- Overlay Text -->
+    <div class="overlay-content center-content">
+      <div class="banner2">
+        <p class="tagline">What we do</p>
+        <h1>Built to <span id="changing-word">Shield</span></h1>
+        <p class="description">
+          Our team delivers reliable solutions tailored to your specific needs. 
+          We prioritize quality and customer satisfaction in every project.
+        </p>
+        <a href="about.html" class="btn-orange">Learn More</a>
+      </div>
+    </div>
+
+  </div>
+</section>
 
 
 
@@ -614,6 +638,17 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
   });
+</script>
+
+<script>
+  const slidesmain = document.querySelectorAll('.slide');
+  let index = 0;
+
+  setInterval(() => {
+    slides[index].classList.remove('active');
+    index = (index + 1) % slides.length;
+    slides[index].classList.add('active');
+  }, 3000);
 </script>
 
 
