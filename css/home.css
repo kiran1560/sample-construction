@@ -1466,3 +1466,240 @@ body {
     grid-template-columns: 1fr;
   }
 }
+
+
+
+
+
+
+.pro-features-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.pro-section-header {
+  border-left: 4px solid #ffab00; /* Match the orange theme */
+  padding-left: 15px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  color: #222;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.pro-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* Creates the thin inner borders like the screenshot */
+  border-top: 1px solid #eee;
+  border-left: 1px solid #eee;
+}
+
+.pro-card {
+  padding: 50px 40px;
+  background: #ffffff;
+  border-right: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  position: relative;
+}
+
+.pro-icon {
+  font-size: 48px !important;
+  color: #333;
+  margin-bottom: 10px;
+  transition: color 0.3s;
+}
+
+.pro-card h3 {
+  margin: 0;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #222;
+  transition: color 0.3s;
+}
+
+.pro-card p {
+  margin: 0;
+  color: #666;
+  line-height: 1.6;
+  font-size: 0.95rem;
+  transition: color 0.3s;
+}
+
+/* Hover State: All cards start white and turn orange only on hover */
+.pro-card:hover {
+  background-color: #f67c19; /* The yellow-orange from your image */
+  transform: translateY(-5px); /* Lift effect */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  z-index: 10;
+  border-color: transparent;
+}
+
+/* Change content color to white on hover */
+.pro-card:hover h3, 
+.pro-card:hover p, 
+.pro-card:hover .pro-icon {
+  color: #ffffff !important;
+}
+
+/* Responsive Logic */
+@media (max-width: 992px) {
+  .pro-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 650px) {
+  .pro-grid {
+    grid-template-columns: 1fr;
+    border-left: none; /* Cleaner look for mobile stacks */
+  }
+  .pro-card {
+    border-left: 1px solid #eee;
+    padding: 35px 25px;
+  }
+}
+
+
+
+:root {
+    --primary-orange: #ff9800;
+    --dark-orange: #e68a00;
+    --text-main: #333;
+    --text-light: #666;
+    --bg-white: #ffffff;
+}
+
+.services-section {
+    padding: 60px 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.section-title {
+    color: var(--primary-orange);
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+    border-left: 4px solid var(--primary-orange);
+    padding-left: 15px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 0; /* Removing gap to create the interlocking look */
+}
+
+.service-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: var(--bg-white);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    z-index: 10;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.service-content {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.service-content h3 {
+    margin: 0 0 15px 0;
+    font-size: 1.5rem;
+    color: var(--text-main);
+}
+
+.service-content p {
+    color: var(--text-light);
+    line-height: 1.6;
+    margin-bottom: 25px;
+    font-size: 0.95rem;
+}
+
+.service-image {
+    position: relative;
+    height: 300px;
+}
+
+.service-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* The Triangle Arrows */
+.arrow-up, .arrow-down {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.arrow-up {
+    bottom: 0;
+    border-bottom: 20px solid var(--bg-white);
+}
+
+.arrow-down {
+    top: 0;
+    border-top: 20px solid var(--bg-white);
+}
+
+/* The Button */
+.service-btn {
+    display: inline-block;
+    width: fit-content;
+    padding: 12px 25px;
+    background-color: var(--primary-orange);
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+}
+
+.service-btn:hover {
+    background-color: var(--dark-orange);
+}
+
+.service-btn span {
+    margin-left: 8px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .service-card {
+        grid-template-columns: 1fr;
+    }
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+    .arrow-up, .arrow-down {
+        display: none; /* Hide triangles on mobile for cleaner stack */
+    }
+}
